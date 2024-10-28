@@ -32,3 +32,42 @@ Started reading
 
 4:46pm - General
 Discovered the Double Design Diamond and will try to implement it into workload.
+
+5:07pm - Foundations of Probability
+Started to read
+
+5:30pm
+I learned - 
+1. Binomial Distribution
+Type: Discrete distribution.
+Number of Trials: Fixed number of trials (n).
+Outcomes: Each trial has two possible outcomes (success or failure).
+Probability: Probability of success (p) is constant across trials.
+Independence: Trials are independent of one another.
+
+2. Normal Distribution
+Type: Continuous distribution.
+Shape: Bell-shaped and symmetric around the mean.
+Parameters: Defined by two parameters: mean (μ) and standard deviation (σ).
+Range: Values can range from −∞ to +∞.
+
+3. Poisson Distribution
+Type: Discrete distribution.
+Occurrences: Models the number of events occurring in a fixed interval (time, area, volume) given a constant average rate (λ).
+Independence: Events occur independently of one another
+
+5:38pm
+I learned - 
+Convergence in probability theory refers to the idea of a sequence of random variables 
+approaching a specific value or distribution as the number of trials or observations increases. 
+
+7:17pm
+I learned - 
+Normalization: The probability of the entire sample space Ω is 1:
+Non-negativity: For any eventA∈F, 𝑃(𝐴)≥0
+Countable Additivity (or σ-additivity): For any countable collection of disjoint 
+sets {𝐴_𝑖}_(𝑖∈𝐼) where {A_i \cup A_j = ∅ for i \neq j) in F:
+P(\bigcup{i∈I} Ai!) = \sum{ i ∈ I} P(A_i)
+This property essentially states that if we have a collection of mutually exclusive
+(disjoint) events, then the probability of at least one of these events occurring is
+the sum of their individual probabilities.
