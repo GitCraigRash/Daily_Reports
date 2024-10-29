@@ -9,3 +9,13 @@ A sub-σ-algebra is a subset of a σ-algebra that itself satisfies the propertie
 and countable unions, and it includes the empty set and the full set Ω.
 
 A filtration is a mathematical way to model the accumulation of information over time. 
+
+9:12am
+1:11pm
+Finsihed reading the paper after asking Chat about almost every step. 
+It seem sto culimnate by saying that the possiblity of A(an event) given G (G being a subset 
+of all possiblites (F)), is the same as integering(not summing) every possibility(each possiblity is 
+labeled ω) in G multiplied by the probability of A given G multiplied by the differential of the probability of ω(in F???)
+dP(ω)
+The formula -
+\int_{G} P(A|G)(ω) dP(ω) = P(A ∩ G)
