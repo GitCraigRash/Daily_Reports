@@ -71,3 +71,7 @@ P(\bigcup{i∈I} Ai!) = \sum{ i ∈ I} P(A_i)
 This property essentially states that if we have a collection of mutually exclusive
 (disjoint) events, then the probability of at least one of these events occurring is
 the sum of their individual probabilities.
+
+8:02pm
+Learning about Universal property of completion.
+
