@@ -1,0 +1,13 @@
+7:30am
+Treid to read and discover how generalization is possible in a 
+"""Consider a dataset of N training samples xi ∈ R^d
+which are identically and independently distributed (iid) vectors, xi ∼ N (0, σ^2 * I_d) with σ > 0 the
+feature standard deviation, and Id is the d × d identity matrix. The task is logistic classification,
+where all input points are assigned the same label. We work in the N, d → ∞ regime, and their ratio,
+λ = d/N, plays a crucial role in the network’s training dynamics and generalization properties."""
+
+9:50am 
+Two hour nap
+
+11:50am 
+Looking to get a Latex document printed from AI_Scientist
