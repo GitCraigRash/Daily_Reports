@@ -57,3 +57,15 @@ The function prints the target sparsity and the actual sparsity before and after
 9. Validation and Test Pass/Fail Check:
 If target_nonzeros is None, the function checks if mask matches test_mask and prints whether the test passed.
 If target_nonzeros is set, it counts the non-zero elements in mask and checks if they match the target_nonzeros value.
+
+
+1:01pm
+Discover more of explointing sparcity.
+Learning about the FineGraned Pruner
+
+quesitons in my mind: How does the program access the tensors.
+How does the program descide which tensors to keep or toss?
+How does the program assign this to the network?
+How doe sthe program move from point to point?
+Does this process apply to pooling layers? 
+
