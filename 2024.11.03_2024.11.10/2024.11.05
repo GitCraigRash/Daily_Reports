@@ -1,0 +1,59 @@
+6:47am
+Finding all the steps needed to perform EfficientML.AI
+  Step 1 Download model
+    Open Google colab
+      Use T4 or Equivalant GPU
+
+    install Py
+  Step 2 Prune
+  Step 3 Retrain
+  Step # Reduce Bits
+  Step # calculate 
+
+
+10:27am
+Discovered ToTensor() is used to convert images to tensor values.
+
+10:45am
+Examined the test_fine_grained_prune() function. I discoverd that it has four parameters
+
+test_tensor: A sample 5x5 tensor (matrix) that will be used for testing the pruning operation.
+
+test_mask: A boolean mask indicating which elements should be kept or set to zero after pruning (where True means keep the value, False means it can be pruned).
+
+target_sparsity: Specifies the target sparsity (percentage of elements that should be zero) for the pruning operation. In this example, it’s set to 0.75, meaning 75% of elements should ideally be zero after pruning.
+
+target_nonzeros: An optional parameter that specifies a target number of non-zero elements remaining in the tensor after pruning.
+
+It prunes vectors with these steps:
+1. Helper Function plot_matrix:
+plot_matrix is a nested helper function that visualizes a given tensor. It uses imshow to display the tensor’s structure, marking zero (pruned) elements visually.
+It sets up the display with ax.set_title(title) and hides the tick labels to give a clean matrix view.
+For each element, it places a text label showing its numeric value.
+
+2. Cloning test_tensor:
+test_tensor is cloned to avoid modifying the original tensor.
+
+3. Plotting the Initial Tensor:
+The function creates a figure with two subplots, ax_left and ax_right. It first displays test_tensor as a "dense tensor" (the unpruned matrix) in the left subplot using plot_matrix.
+
+4. Calculating Sparsity Before Pruning:
+sparsity_before_pruning calculates the proportion of zero elements in test_tensor before any pruning occurs using the get_sparsity function (assumed to be defined elsewhere).
+
+5. Applying Fine-Grained Pruning:
+The function applies fine_grained_prune to test_tensor, targeting the specified sparsity level (target_sparsity).
+mask is the resulting pruning mask indicating which elements are kept and which are pruned.
+
+6. Calculating Sparsity After Pruning:
+sparsity_after_pruning is computed to check the sparsity level after pruning.
+sparsity_of_mask computes the sparsity of the pruning mask itself, indicating how many values were set to zero.
+
+7. Plotting the Pruned Tensor:
+test_tensor is plotted again in the "sparse tensor" subplot (the pruned version), showing the distribution of pruned values.
+
+8. Displaying Pruning Information:
+The function prints the target sparsity and the actual sparsity before and after pruning to provide a comparison.
+
+9. Validation and Test Pass/Fail Check:
+If target_nonzeros is None, the function checks if mask matches test_mask and prints whether the test passed.
+If target_nonzeros is set, it counts the non-zero elements in mask and checks if they match the target_nonzeros value.
